@@ -6,7 +6,7 @@
             <router-link to="/app_1">other</router-link>
         </div>
         <router-view />
-        <div id="container"></div>
+        <div id="container" />
     </div>
 </template>
 

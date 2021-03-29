@@ -9,11 +9,6 @@ module.exports = {
         "no-descending-specificity": null,
         "declaration-colon-newline-after": null,
         "color-no-invalid-hex": true,
-        "color-hex-length": "long",
-        "color-hex-case": "lower",
         "unit-whitelist": ["em", "rem", "%", "s", "px"],
-        "declaration-colon-newline-after": null,
     },
   };
-  
-  
