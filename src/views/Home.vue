@@ -13,6 +13,13 @@ export default {
     components: {
         HelloWorld
     },
-    mounted() {}
+    mounted() {
+
+    },
+    methods: {
+            handleClick(){
+            console.log('d');
+        }
+    },
 };
 </script>
