@@ -10,6 +10,7 @@ module.exports = {
          * 使用双引号 single
          */
         quotes: ["error", "double"],
+        "prettier/prettier": "off",
         // 如果有冲突的话，优先eslint
         "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
         "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
@@ -32,16 +33,6 @@ module.exports = {
             {
                 args: "none",
                 ignoreRestSiblings: true
-            }
-        ],
-        /**
-         * 大括号风格要求
-         */
-        "brace-style": [
-            "warn",
-            "1tbs",
-            {
-                allowSingleLine: true
             }
         ],
         /**
