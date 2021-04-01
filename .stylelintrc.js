@@ -1,5 +1,5 @@
 module.exports = {
-    extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
+    extends: ["stylelint-config-standard"],
     /**
      * 本规则文件，主要对样式进行一些规则限制
      * 详细规则可以查看
@@ -8,23 +8,26 @@ module.exports = {
     rules: {
         // 缩进
         indentation: 4,
-        // 指定 16 进制颜色的简写或扩写。
-        'color-hex-length': 'long',
+        // 不允许颜色缩写
+        "color-hex-length": "long",
         // 指定 16 进制颜色的大小写。
-        'color-hex-case': 'lower',
-        // 要求或禁止声明块的一个尾随分号。
-        'declaration-block-trailing-semicolon': 'never',
+        "color-hex-case": "lower",
         // 指定伪元素适用单冒号还是双冒号表示法。
-        'selector-pseudo-element-colon-notation': 'double',
+        "selector-pseudo-element-colon-notation": "double",
         // 禁止零长度的单位。
-        'length-zero-no-unit': true,
-        // 禁止在具有较高优先级的选择器后出现被其覆盖的较低优先级的选择器。
-        'no-descending-specificity': null,
-        // 要求在声明块的冒号之后必须有换行符或不能有空白符。
-        'declaration-colon-newline-after': null,
+        "length-zero-no-unit": true,
         // 禁止无效的 16 进制颜色。
-        'color-no-invalid-hex': true,
-        //指定声明内允许的属性和单位对的白名单。
-        'unit-whitelist': ['ms', 'deg', 'em', 'rem', '%', 's', 'px', 'vh', 'vmax']
+        "color-no-invalid-hex": true,
+        // 允许一行空行
+        "max-empty-lines": 1,
+        // 要求在块的开大括号之前必须有一个空格或不能有空白符。
+        "block-opening-brace-space-before": "always",
+        // 选择器列表的逗号后需要换行符或不允许使用空格。
+        "selector-list-comma-newline-after": "always",
+        // 忽略字体类型格式
+        "font-family-no-missing-generic-family-keyword": null,
+        // 尾符号
+        "declaration-block-trailing-semicolon": null,
+        "declaration-colon-space-after": "always"
     }
 };
