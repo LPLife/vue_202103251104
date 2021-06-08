@@ -1,24 +1,24 @@
 {
-    "tabWidth": 4,
-    "singleQuote": false,
-    "trailingComma": "none",
-    "printWidth": 100,
-    "proseWrap": "never",
-    "bracketSpacing": false,
-    "endOfLine": "lf",
-    "overrides": [
-        {
-            "files": ".prettierrc",
-            "options": {
-                "parser": "json"
-            }
-        },
-        {
-            "files": "*.{css,sass,scss,less}",
-            "options": {
-                "parser": "less",
-                "tabWidth": 4
-            }
-        }
-    ]
+  "tabWidth": 2,
+  "singleQuote": false,
+  "trailingComma": "none",
+  "printWidth": 100,
+  "proseWrap": "never",
+  "bracketSpacing": false,
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": ".prettierrc",
+      "options": {
+        "parser": "json"
+      }
+    },
+    {
+      "files": "*.{css,sass,scss,less}",
+      "options": {
+        "parser": "less",
+        "tabWidth": 2
+      }
+    }
+  ]
 }
